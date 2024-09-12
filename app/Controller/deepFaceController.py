@@ -18,7 +18,9 @@ def verify_images(req: request):
     # backends = [ 'opencv', 'ssd', 'dlib', 'mtcnn', 'fastmtcnn', 'retinaface', 'mediapipe', 'yolov8', 'yunet', 'centerface' ]
     # models = ["VGG-Face", "Facenet", "Facenet512", "OpenFace", "DeepFace", "DeepID", "ArcFace", "Dlib", "SFace", "GhostFaceNet"]
     models = ["VGG-Face", "Facenet", "ArcFace"]
-    backends = [ 'opencv',  'retinaface',  'yolov8' ]
+    backends = ['opencv' , 'retinaface','yolov8']
+    # backends = ['yolov8' ]
+    # models = ["VGG-Face"]
 
     try:
         verifyResults = DeepFaceModel.verify_images(img1, img2, models, backends) 
