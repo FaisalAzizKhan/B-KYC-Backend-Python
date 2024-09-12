@@ -21,8 +21,8 @@ def verify_images(req: request):
     backends = [ 'opencv',  'retinaface',  'yolov8' ]
 
     try:
-        verifyResults = DeepFaceModel.verify_images(img1, img2, models, backends)
-        # analyzeResults = DeepFaceModel.analyze_images(img1, img2, models, backends)
+        verifyResults = DeepFaceModel.verify_images(img1, img2, models, backends) 
+        # analyzeResults = DeepFaceModel.analyze_images(img1, img2, models, backends) 
 
         return jsonify(verifyResults)
     except Exception as e:
